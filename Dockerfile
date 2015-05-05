@@ -1,6 +1,6 @@
 FROM node:0.12.2
 
-RUN npm install -g git+https://git@github.com/themistymay/npm-fullfat-registry.git
+RUN npm install -g git+https://github.com/themistymay/npm-fullfat-registry.git
 
 RUN curl -X PUT http://192.168.59.104:5984/registry
 
