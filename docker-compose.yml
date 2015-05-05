@@ -1,0 +1,13 @@
+npmregistry:
+  build: .
+  links:
+    - couchdb
+
+couchdb:
+  image: themistymay/couchdb
+  ports:
+    - "5984:5984"
+  expose:
+    - "5984"
+  # volumes:
+  #   - "/media/mmay/Development/npm:/usr/local/var/lib/couchdb"
