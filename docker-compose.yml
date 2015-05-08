@@ -2,6 +2,8 @@ npmregistry:
   build: .
   links:
     - couchdb
+  volumes:
+    - "/mnt/da953ecc-f395-4e78-a565-0ae78303db8e/npm:/npm"
 
 couchdb:
   image: themistymay/couchdb
@@ -9,5 +11,5 @@ couchdb:
     - "5984:5984"
   expose:
     - "5984"
-  # volumes:
-  #   - "/media/mmay/Development/npm:/usr/local/var/lib/couchdb"
+  volumes:
+    - "/mnt/da953ecc-f395-4e78-a565-0ae78303db8e/npm/couchdb:/usr/local/var/lib/couchdb"
