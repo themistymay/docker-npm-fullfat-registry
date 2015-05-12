@@ -4,6 +4,8 @@ npmregistry:
     - couchdb
   volumes:
     - "/mnt/da953ecc-f395-4e78-a565-0ae78303db8e/npm:/npm"
+  dns:
+    - 172.16.0.1
 
 couchdb:
   image: themistymay/couchdb
